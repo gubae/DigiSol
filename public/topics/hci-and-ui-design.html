@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCI &amp; UI Design – DigiSol</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo">Digi<span>Sol</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/topics/hci-and-ui-design.html" class="active">Topics</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb"><a href="/">Home</a> › HCI &amp; UI Design</p>
+
+    <div class="topic-header">
+      <h1>🎨 HCI &amp; UI Design</h1>
+      <p>Human-Computer Interaction principles and user-centred interface design – Unit 4.</p>
+    </div>
+
+    <!-- 1. HCI Overview -->
+    <div class="content-block">
+      <h2>1. What is HCI?</h2>
+      <p><strong>Human-Computer Interaction (HCI)</strong> is the study of how people interact with computers and how to design systems that are easy, efficient, and enjoyable to use.</p>
+
+      <h3>Why HCI Matters</h3>
+      <ul>
+        <li>Poor UI design leads to user errors, frustration, and abandoned software.</li>
+        <li>Good design reduces cognitive load and improves productivity.</li>
+        <li>Accessibility ensures everyone – including people with disabilities – can use technology.</li>
+      </ul>
+    </div>
+
+    <!-- 2. Design Principles -->
+    <div class="content-block">
+      <h2>2. Nielsen's 10 Usability Heuristics</h2>
+      <p>These ten principles, developed by Jakob Nielsen, are a standard checklist for good UI design.</p>
+      <ol>
+        <li><strong>Visibility of system status</strong> – keep users informed about what is happening (e.g. loading bars).</li>
+        <li><strong>Match between system and real world</strong> – use familiar language and concepts.</li>
+        <li><strong>User control and freedom</strong> – provide undo/redo to reverse mistakes.</li>
+        <li><strong>Consistency and standards</strong> – follow platform conventions.</li>
+        <li><strong>Error prevention</strong> – design to prevent errors before they occur.</li>
+        <li><strong>Recognition over recall</strong> – make options visible rather than relying on memory.</li>
+        <li><strong>Flexibility and efficiency</strong> – support both novice and expert users (e.g. keyboard shortcuts).</li>
+        <li><strong>Aesthetic and minimalist design</strong> – avoid irrelevant information.</li>
+        <li><strong>Help users recognise, diagnose, and recover from errors</strong> – plain-language error messages.</li>
+        <li><strong>Help and documentation</strong> – provide easy-to-search support.</li>
+      </ol>
+    </div>
+
+    <!-- 3. UI Design Elements -->
+    <div class="content-block">
+      <h2>3. UI Design Elements</h2>
+
+      <h3>Layout &amp; Visual Hierarchy</h3>
+      <ul>
+        <li>Use whitespace (negative space) to avoid clutter.</li>
+        <li>Larger, bolder elements draw attention first.</li>
+        <li>Align elements consistently to create order.</li>
+        <li>Use the <strong>F-pattern</strong> or <strong>Z-pattern</strong> for how users scan a page.</li>
+      </ul>
+
+      <h3>Colour</h3>
+      <ul>
+        <li>Choose a limited palette (primary, secondary, accent).</li>
+        <li>Ensure sufficient contrast between text and background (WCAG AA requires a ratio of at least 4.5:1 for normal text).</li>
+        <li>Never use colour as the <em>only</em> way to convey information (colour-blind accessibility).</li>
+      </ul>
+
+      <h3>Typography</h3>
+      <ul>
+        <li>Use readable fonts – sans-serif (e.g. Arial, Open Sans) for body text.</li>
+        <li>Maintain hierarchy: headings > subheadings > body text.</li>
+        <li>Minimum body font size: 16 px for screen readability.</li>
+      </ul>
+
+      <h3>Navigation</h3>
+      <ul>
+        <li>Users should always know <em>where they are</em> and <em>how to get back</em>.</li>
+        <li>Breadcrumbs, menus, and clear labelling aid orientation.</li>
+        <li>Limit menu items to 5–9 (Miller's Law / cognitive load).</li>
+      </ul>
+    </div>
+
+    <!-- 4. User-Centred Design Process -->
+    <div class="content-block">
+      <h2>4. User-Centred Design (UCD)</h2>
+      <p>UCD places the user at every stage of the design process.</p>
+
+      <h3>Design Process Stages</h3>
+      <ol>
+        <li><strong>Research</strong> – understand users, their needs, and context (surveys, interviews, personas).</li>
+        <li><strong>Define</strong> – identify the problem and requirements (functional &amp; non-functional).</li>
+        <li><strong>Ideate</strong> – brainstorm solutions; create low-fidelity sketches.</li>
+        <li><strong>Prototype</strong> – build a mockup (wireframe, Figma prototype, HTML prototype).</li>
+        <li><strong>Test</strong> – evaluate usability with real users; gather feedback.</li>
+        <li><strong>Iterate</strong> – refine based on feedback and repeat.</li>
+      </ol>
+
+      <h3>Prototyping Types</h3>
+      <ul>
+        <li><strong>Low-fidelity (lo-fi)</strong> – hand-drawn sketches or simple wireframes. Fast and cheap.</li>
+        <li><strong>High-fidelity (hi-fi)</strong> – detailed, interactive mock-ups closely resembling the final product.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Accessibility -->
+    <div class="content-block">
+      <h2>5. Accessibility (a11y)</h2>
+      <p>Accessible design ensures digital solutions can be used by people with a wide range of abilities.</p>
+
+      <h3>WCAG Principles (POUR)</h3>
+      <ul>
+        <li><strong>Perceivable</strong> – information must be presented in ways users can perceive (alt text for images).</li>
+        <li><strong>Operable</strong> – UI components must be operable (keyboard navigation).</li>
+        <li><strong>Understandable</strong> – information and UI operation must be understandable.</li>
+        <li><strong>Robust</strong> – content must be reliably interpreted by assistive technologies.</li>
+      </ul>
+
+      <div class="callout">
+        💡 <strong>HTML tip:</strong> Always add meaningful <code>alt</code> text to images: <code>&lt;img src="logo.png" alt="DigiSol logo"&gt;</code>
+      </div>
+    </div>
+
+    <!-- 6. Key Terms -->
+    <div class="content-block">
+      <h2>6. Key Terms Checklist</h2>
+      <ul>
+        <li>HCI, usability, user experience (UX)</li>
+        <li>Nielsen's heuristics (all 10)</li>
+        <li>Visual hierarchy, whitespace, alignment</li>
+        <li>Colour contrast, typography</li>
+        <li>User-centred design, prototype (lo-fi vs hi-fi)</li>
+        <li>WCAG, POUR principles, alt text</li>
+        <li>Cognitive load, affordance, feedback</li>
+      </ul>
+      <div class="callout success">
+        ✅ <strong>Self-check:</strong> Evaluate this page against three of Nielsen's heuristics. What does it do well? What could be improved?
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>DigiSol &ndash; Digital Solutions General Senior Subject &bull; Queensland Curriculum &amp; Assessment Authority (QCAA)</p>
+  </footer>
+
+</body>
+</html>

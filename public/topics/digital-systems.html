@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Systems – DigiSol</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo">Digi<span>Sol</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/topics/digital-systems.html" class="active">Topics</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb"><a href="/">Home</a> › Digital Systems</p>
+
+    <div class="topic-header">
+      <h1>🖥️ Digital Systems</h1>
+      <p>Hardware, software, data representation, and how computers process information – Unit 1.</p>
+    </div>
+
+    <!-- 1. Hardware -->
+    <div class="content-block">
+      <h2>1. Hardware Components</h2>
+      <p>A computer system is made up of <strong>hardware</strong> (physical components) that work together to process data.</p>
+
+      <h3>Central Processing Unit (CPU)</h3>
+      <p>The CPU is the "brain" of the computer. It fetches, decodes, and executes instructions using the <strong>Fetch–Decode–Execute cycle</strong>.</p>
+      <ul>
+        <li><strong>Control Unit (CU)</strong> – directs the flow of data and instructions.</li>
+        <li><strong>Arithmetic Logic Unit (ALU)</strong> – performs calculations and logical comparisons.</li>
+        <li><strong>Registers</strong> – small, extremely fast temporary storage inside the CPU.</li>
+        <li><strong>Cache</strong> – small, fast memory that stores frequently used data.</li>
+      </ul>
+
+      <h3>Memory</h3>
+      <ul>
+        <li><strong>RAM (Random Access Memory)</strong> – volatile, temporary working memory.</li>
+        <li><strong>ROM (Read-Only Memory)</strong> – non-volatile, stores firmware/BIOS.</li>
+        <li><strong>Secondary Storage</strong> – HDD, SSD, USB drives (permanent storage).</li>
+      </ul>
+
+      <h3>Input / Output Devices</h3>
+      <ul>
+        <li><strong>Input:</strong> keyboard, mouse, microphone, camera, scanner, sensors.</li>
+        <li><strong>Output:</strong> monitor, speakers, printer, projector.</li>
+        <li><strong>Both:</strong> touchscreen, network interface card (NIC).</li>
+      </ul>
+    </div>
+
+    <!-- 2. Data Representation -->
+    <div class="content-block">
+      <h2>2. Data Representation</h2>
+      <p>Computers store all data as <strong>binary</strong> (base-2) numbers using only 0s and 1s.</p>
+
+      <h3>Number Systems</h3>
+      <ul>
+        <li><strong>Binary (base-2):</strong> digits 0–1. Example: <code>1010</code> = 10 in decimal.</li>
+        <li><strong>Decimal (base-10):</strong> digits 0–9.</li>
+        <li><strong>Hexadecimal (base-16):</strong> digits 0–9 and A–F. Example: <code>FF</code> = 255 in decimal.</li>
+      </ul>
+
+      <h3>Converting Binary to Decimal</h3>
+      <p>Use place values (powers of 2): 128, 64, 32, 16, 8, 4, 2, 1.</p>
+      <div class="callout">
+        <strong>Example:</strong> <code>0110 1001</code><br/>
+        = 0×128 + 1×64 + 1×32 + 0×16 + 1×8 + 0×4 + 0×2 + 1×1<br/>
+        = 64 + 32 + 8 + 1 = <strong>105</strong>
+      </div>
+
+      <h3>Units of Storage</h3>
+      <ul>
+        <li>1 bit = a single 0 or 1</li>
+        <li>8 bits = 1 byte</li>
+        <li>1024 bytes = 1 kilobyte (KB)</li>
+        <li>1024 KB = 1 megabyte (MB)</li>
+        <li>1024 MB = 1 gigabyte (GB)</li>
+        <li>1024 GB = 1 terabyte (TB)</li>
+      </ul>
+
+      <h3>Representing Characters – ASCII &amp; Unicode</h3>
+      <p><strong>ASCII</strong> (American Standard Code for Information Interchange) maps 128 characters to 7-bit codes. <strong>Unicode</strong> extends this to cover every character in every language.</p>
+    </div>
+
+    <!-- 3. Software -->
+    <div class="content-block">
+      <h2>3. Software</h2>
+      <p>Software is the set of instructions that tell hardware what to do.</p>
+
+      <h3>Types of Software</h3>
+      <ul>
+        <li><strong>System Software</strong> – manages hardware (e.g. operating systems, device drivers).</li>
+        <li><strong>Application Software</strong> – performs specific tasks for users (e.g. word processors, games, browsers).</li>
+        <li><strong>Utility Software</strong> – maintains and optimises the system (e.g. antivirus, disk cleaners).</li>
+      </ul>
+
+      <h3>Operating System Functions</h3>
+      <ul>
+        <li>Process management (scheduling CPU time)</li>
+        <li>Memory management (allocating RAM)</li>
+        <li>File system management</li>
+        <li>Input/output device management</li>
+        <li>User interface (GUI or CLI)</li>
+      </ul>
+    </div>
+
+    <!-- 4. Key Terms -->
+    <div class="content-block">
+      <h2>4. Key Terms Checklist</h2>
+      <p>Make sure you can define and use each of these terms:</p>
+      <ul>
+        <li>Bit, byte, binary, hexadecimal</li>
+        <li>CPU, ALU, CU, register, cache</li>
+        <li>RAM, ROM, volatile, non-volatile</li>
+        <li>ASCII, Unicode, encoding</li>
+        <li>Operating system, application software, utility software</li>
+        <li>Input device, output device</li>
+      </ul>
+      <div class="callout success">
+        ✅ <strong>Self-check:</strong> Can you explain the Fetch–Decode–Execute cycle in your own words?
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>DigiSol &ndash; Digital Solutions General Senior Subject &bull; Queensland Curriculum &amp; Assessment Authority (QCAA)</p>
+  </footer>
+
+</body>
+</html>

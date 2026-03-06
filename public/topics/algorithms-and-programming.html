@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algorithms &amp; Programming – DigiSol</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo">Digi<span>Sol</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/topics/algorithms-and-programming.html" class="active">Topics</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb"><a href="/">Home</a> › Algorithms &amp; Programming</p>
+
+    <div class="topic-header">
+      <h1>💻 Algorithms &amp; Programming</h1>
+      <p>Problem-solving methodologies, pseudocode, flowcharts, and Python programming fundamentals – Unit 3.</p>
+    </div>
+
+    <!-- 1. Problem Solving -->
+    <div class="content-block">
+      <h2>1. Problem-Solving Approach</h2>
+      <p>Digital Solutions uses a structured approach to solving problems:</p>
+      <ol>
+        <li><strong>Define the problem</strong> – understand what is needed.</li>
+        <li><strong>Plan the solution</strong> – design an algorithm using pseudocode or flowchart.</li>
+        <li><strong>Implement the solution</strong> – write the code.</li>
+        <li><strong>Test and evaluate</strong> – verify the solution works for all cases.</li>
+      </ol>
+
+      <div class="callout">
+        💡 <strong>Algorithm:</strong> A precise, step-by-step set of instructions for solving a problem or completing a task.
+      </div>
+    </div>
+
+    <!-- 2. Pseudocode -->
+    <div class="content-block">
+      <h2>2. Pseudocode</h2>
+      <p>Pseudocode uses plain English to describe an algorithm – it is <em>not</em> a programming language, but it is structured.</p>
+
+      <h3>Common Pseudocode Conventions (QCAA style)</h3>
+      <pre><code>BEGIN
+  INPUT name
+  IF name = "Alice" THEN
+    DISPLAY "Welcome back, Alice!"
+  ELSE
+    DISPLAY "Hello, " + name
+  END IF
+END</code></pre>
+
+      <h3>Loops in Pseudocode</h3>
+      <pre><code>FOR count ← 1 TO 5
+  DISPLAY count
+END FOR
+
+WHILE score &lt; 100
+  score ← score + 10
+END WHILE</code></pre>
+    </div>
+
+    <!-- 3. Flowcharts -->
+    <div class="content-block">
+      <h2>3. Flowcharts</h2>
+      <p>Flowcharts use standard symbols to represent an algorithm visually.</p>
+      <ul>
+        <li><strong>Oval (Terminator)</strong> – START or END.</li>
+        <li><strong>Parallelogram (I/O)</strong> – INPUT or OUTPUT.</li>
+        <li><strong>Rectangle (Process)</strong> – calculations or assignments.</li>
+        <li><strong>Diamond (Decision)</strong> – YES/NO or TRUE/FALSE branch.</li>
+        <li><strong>Arrows</strong> – show the flow of control.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Python Fundamentals -->
+    <div class="content-block">
+      <h2>4. Python Fundamentals</h2>
+
+      <h3>Variables and Input</h3>
+      <pre><code>name = input("What is your name? ")
+age = int(input("How old are you? "))
+print("Hello,", name, "– you are", age, "years old.")</code></pre>
+
+      <h3>Conditional Statements</h3>
+      <pre><code>score = int(input("Enter score: "))
+if score >= 90:
+    print("A")
+elif score >= 75:
+    print("B")
+elif score >= 60:
+    print("C")
+else:
+    print("Below C")</code></pre>
+
+      <h3>For Loops</h3>
+      <pre><code>for i in range(1, 6):
+    print(i)          # prints 1, 2, 3, 4, 5
+
+fruits = ["apple", "banana", "mango"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+
+      <h3>While Loops</h3>
+      <pre><code>count = 0
+while count &lt; 5:
+    print(count)
+    count += 1</code></pre>
+
+      <h3>Functions</h3>
+      <pre><code>def greet(name):
+    return "Hello, " + name + "!"
+
+message = greet("Alice")
+print(message)   # Hello, Alice!</code></pre>
+
+      <h3>Lists</h3>
+      <pre><code>marks = [85, 92, 78, 65, 90]
+print(len(marks))       # 5
+print(max(marks))       # 92
+print(sum(marks) / len(marks))  # average</code></pre>
+
+      <h3>File I/O</h3>
+      <pre><code># Writing to a file
+with open("data.txt", "w") as f:
+    f.write("Hello, file!\n")
+
+# Reading from a file
+with open("data.txt", "r") as f:
+    content = f.read()
+    print(content)</code></pre>
+    </div>
+
+    <!-- 5. Searching & Sorting -->
+    <div class="content-block">
+      <h2>5. Searching &amp; Sorting Algorithms</h2>
+
+      <h3>Linear Search</h3>
+      <p>Check each element one by one until the target is found. Time complexity: <strong>O(n)</strong>.</p>
+      <pre><code>def linear_search(lst, target):
+    for i in range(len(lst)):
+        if lst[i] == target:
+            return i
+    return -1</code></pre>
+
+      <h3>Binary Search</h3>
+      <p>Requires a <em>sorted</em> list. Halves the search space each step. Time complexity: <strong>O(log n)</strong>.</p>
+      <pre><code>def binary_search(lst, target):
+    low, high = 0, len(lst) - 1
+    while low &lt;= high:
+        mid = (low + high) // 2
+        if lst[mid] == target:
+            return mid
+        elif lst[mid] &lt; target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1</code></pre>
+
+      <h3>Bubble Sort</h3>
+      <p>Repeatedly swaps adjacent elements that are out of order. Time complexity: <strong>O(n²)</strong>.</p>
+      <pre><code>def bubble_sort(lst):
+    n = len(lst)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if lst[j] &gt; lst[j + 1]:
+                lst[j], lst[j + 1] = lst[j + 1], lst[j]
+    return lst</code></pre>
+    </div>
+
+    <!-- 6. Key Terms -->
+    <div class="content-block">
+      <h2>6. Key Terms Checklist</h2>
+      <ul>
+        <li>Algorithm, pseudocode, flowchart</li>
+        <li>Variable, assignment, data type</li>
+        <li>Sequence, selection (if/elif/else), iteration (for/while)</li>
+        <li>Function, parameter, return value</li>
+        <li>List, index, append, length</li>
+        <li>Linear search, binary search</li>
+        <li>Bubble sort, time complexity</li>
+        <li>Testing: normal, boundary, invalid data</li>
+      </ul>
+      <div class="callout success">
+        ✅ <strong>Self-check:</strong> Trace through the binary search algorithm with the list <code>[2, 5, 8, 12, 16]</code> searching for <code>12</code>.
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>DigiSol &ndash; Digital Solutions General Senior Subject &bull; Queensland Curriculum &amp; Assessment Authority (QCAA)</p>
+  </footer>
+
+</body>
+</html>
