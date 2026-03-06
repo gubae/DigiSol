@@ -17,27 +17,37 @@ A web server that hosts self-learning content for students studying
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) v18 or later
+- [Node.js](https://nodejs.org/) v18 or later (download from https://nodejs.org — choose the **LTS** version)
 
-### Install and Run
+### Opening the Portal in Your Browser
+
+**Step 1 – Install dependencies** (only needed the first time):
 
 ```bash
-# 1. Install dependencies
 npm install
+```
 
-# 2. Start the server
+**Step 2 – Start the server:**
+
+```bash
 npm start
 ```
 
-The learning portal will be available at **http://localhost:3000**.
+Your default browser will open automatically at **http://localhost:3000**.
+
+If the browser does not open automatically, copy **http://localhost:3000** and paste it into the address bar of any browser (Chrome, Firefox, Edge, Safari, etc.).
+
+> **To stop the server**, press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal.
 
 ### Custom Port
 
-Set the `PORT` environment variable to use a different port:
+If port 3000 is already in use, pick a different one:
 
 ```bash
 PORT=8080 npm start
 ```
+
+Then open **http://localhost:8080** in your browser.
 
 ### Running Tests
 

@@ -28,7 +28,13 @@ app.get('*', (req, res) => {
 // Only start listening when this file is run directly (not when imported in tests)
 if (require.main === module) {
   app.listen(PORT, () => {
-    console.log(`DigiSol learning server running at http://localhost:${PORT}`);
+    const url = `http://localhost:${PORT}`;
+    console.log(`DigiSol learning server running at ${url}`);
+    console.log('Opening in your browser…');
+    // open is an ESM-only package; use dynamic import from CJS
+    import('open').then(({ default: open }) => open(url)).catch(() => {
+      console.log(`Could not open browser automatically. Please visit ${url} manually.`);
+    });
   });
 }
 
