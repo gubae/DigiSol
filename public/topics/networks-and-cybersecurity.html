@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Networks &amp; Cybersecurity – DigiSol</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo">Digi<span>Sol</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/topics/networks-and-cybersecurity.html" class="active">Topics</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb"><a href="/">Home</a> › Networks &amp; Cybersecurity</p>
+
+    <div class="topic-header">
+      <h1>🔒 Networks &amp; Cybersecurity</h1>
+      <p>Network architectures, protocols, threats, and strategies to protect digital assets – Unit 2.</p>
+    </div>
+
+    <!-- 1. Networks Basics -->
+    <div class="content-block">
+      <h2>1. What is a Network?</h2>
+      <p>A <strong>computer network</strong> is two or more devices connected together to share data and resources.</p>
+
+      <h3>Types of Networks</h3>
+      <ul>
+        <li><strong>LAN (Local Area Network)</strong> – covers a small area (e.g. a school or home).</li>
+        <li><strong>WAN (Wide Area Network)</strong> – covers large geographic areas. The Internet is the world's largest WAN.</li>
+        <li><strong>WLAN (Wireless LAN)</strong> – a LAN using Wi-Fi (no physical cables).</li>
+        <li><strong>PAN (Personal Area Network)</strong> – very small; e.g. Bluetooth devices around a person.</li>
+      </ul>
+
+      <h3>Network Topologies</h3>
+      <ul>
+        <li><strong>Star</strong> – all devices connect to a central switch/hub. Most common in schools.</li>
+        <li><strong>Bus</strong> – all devices share a single cable (older technology).</li>
+        <li><strong>Ring</strong> – devices connect in a circle.</li>
+        <li><strong>Mesh</strong> – every device connects to every other device (high redundancy).</li>
+      </ul>
+    </div>
+
+    <!-- 2. Protocols -->
+    <div class="content-block">
+      <h2>2. Protocols</h2>
+      <p>A <strong>protocol</strong> is a set of rules for how data is formatted and transmitted over a network.</p>
+
+      <h3>Key Protocols</h3>
+      <ul>
+        <li><strong>TCP/IP</strong> – the fundamental suite that governs internet communication.</li>
+        <li><strong>HTTP / HTTPS</strong> – transfers web pages (HTTPS is the secure, encrypted version).</li>
+        <li><strong>FTP</strong> – transfers files between computers.</li>
+        <li><strong>SMTP / POP3 / IMAP</strong> – send and receive email.</li>
+        <li><strong>DNS (Domain Name System)</strong> – translates domain names (e.g. <em>google.com</em>) into IP addresses.</li>
+        <li><strong>DHCP</strong> – automatically assigns IP addresses to devices on a network.</li>
+      </ul>
+
+      <h3>The TCP/IP Model (4 Layers)</h3>
+      <ol>
+        <li><strong>Network Access</strong> – physical transmission of bits.</li>
+        <li><strong>Internet</strong> – IP addressing and routing.</li>
+        <li><strong>Transport</strong> – reliable delivery (TCP) or fast, unreliable delivery (UDP).</li>
+        <li><strong>Application</strong> – HTTP, FTP, DNS, SMTP, etc.</li>
+      </ol>
+
+      <h3>IP Addresses</h3>
+      <p>Every device on a network has an <strong>IP address</strong> that uniquely identifies it.</p>
+      <ul>
+        <li><strong>IPv4:</strong> 32-bit, written as four numbers. Example: <code>192.168.1.1</code>.</li>
+        <li><strong>IPv6:</strong> 128-bit, written in hexadecimal. Example: <code>2001:0db8::1</code>.</li>
+        <li><strong>Public IP</strong> – visible on the internet.</li>
+        <li><strong>Private IP</strong> – used inside a LAN (e.g. <code>192.168.x.x</code>).</li>
+      </ul>
+    </div>
+
+    <!-- 3. Cybersecurity Threats -->
+    <div class="content-block">
+      <h2>3. Cybersecurity Threats</h2>
+
+      <h3>Common Attack Types</h3>
+      <ul>
+        <li><strong>Malware</strong> – malicious software (viruses, worms, trojans, ransomware, spyware).</li>
+        <li><strong>Phishing</strong> – deceptive emails/messages that trick users into revealing credentials.</li>
+        <li><strong>Man-in-the-Middle (MitM)</strong> – attacker intercepts communication between two parties.</li>
+        <li><strong>Denial of Service (DoS / DDoS)</strong> – flooding a server with traffic to make it unavailable.</li>
+        <li><strong>SQL Injection</strong> – inserting malicious SQL code into an input field to manipulate a database.</li>
+        <li><strong>Social Engineering</strong> – manipulating people psychologically rather than attacking systems.</li>
+      </ul>
+
+      <div class="callout warning">
+        ⚠️ <strong>Remember:</strong> Humans are often the weakest link in cybersecurity. Always verify the sender before clicking links.
+      </div>
+    </div>
+
+    <!-- 4. Protection Strategies -->
+    <div class="content-block">
+      <h2>4. Protection Strategies</h2>
+
+      <h3>Technical Controls</h3>
+      <ul>
+        <li><strong>Firewalls</strong> – filter incoming and outgoing network traffic.</li>
+        <li><strong>Encryption</strong> – converts data into an unreadable format. Only authorised parties with a key can decrypt it.</li>
+        <li><strong>Authentication</strong> – passwords, multi-factor authentication (MFA), biometrics.</li>
+        <li><strong>Antivirus / Anti-malware</strong> – detect and remove malicious software.</li>
+        <li><strong>VPN (Virtual Private Network)</strong> – creates an encrypted tunnel over a public network.</li>
+        <li><strong>Updates and Patches</strong> – fix known vulnerabilities in software.</li>
+      </ul>
+
+      <h3>Encryption Types</h3>
+      <ul>
+        <li><strong>Symmetric encryption</strong> – same key for encryption and decryption (faster). Example: AES.</li>
+        <li><strong>Asymmetric encryption</strong> – public key encrypts; private key decrypts. Example: RSA.</li>
+        <li><strong>Hashing</strong> – one-way transformation, used for passwords. Example: SHA-256.</li>
+      </ul>
+
+      <h3>The CIA Triad</h3>
+      <ul>
+        <li><strong>Confidentiality</strong> – data accessible only to authorised users.</li>
+        <li><strong>Integrity</strong> – data is accurate and unaltered.</li>
+        <li><strong>Availability</strong> – data is accessible when needed.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Key Terms -->
+    <div class="content-block">
+      <h2>5. Key Terms Checklist</h2>
+      <ul>
+        <li>LAN, WAN, WLAN, topology</li>
+        <li>TCP/IP, HTTP, HTTPS, DNS, DHCP, FTP</li>
+        <li>IPv4, IPv6, public/private IP</li>
+        <li>Malware, phishing, SQL injection, DDoS</li>
+        <li>Firewall, encryption, VPN, MFA</li>
+        <li>CIA Triad: confidentiality, integrity, availability</li>
+        <li>Symmetric vs asymmetric encryption, hashing</li>
+      </ul>
+      <div class="callout success">
+        ✅ <strong>Self-check:</strong> Explain the difference between a virus and a worm. How does HTTPS protect you compared to HTTP?
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>DigiSol &ndash; Digital Solutions General Senior Subject &bull; Queensland Curriculum &amp; Assessment Authority (QCAA)</p>
+  </footer>
+
+</body>
+</html>

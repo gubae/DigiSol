@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data &amp; Information – DigiSol</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo">Digi<span>Sol</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/topics/data-and-information.html" class="active">Topics</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb"><a href="/">Home</a> › Data &amp; Information</p>
+
+    <div class="topic-header">
+      <h1>📊 Data &amp; Information</h1>
+      <p>Data types, structures, databases, and transforming raw data into meaningful information – Unit 1.</p>
+    </div>
+
+    <!-- 1. Data vs Information -->
+    <div class="content-block">
+      <h2>1. Data vs Information</h2>
+      <ul>
+        <li><strong>Data</strong> – raw, unprocessed facts with no context. Example: <code>42</code>, <code>Brisbane</code>, <code>Y</code>.</li>
+        <li><strong>Information</strong> – data that has been processed and given meaning. Example: "The temperature in Brisbane today is 42 °C."</li>
+      </ul>
+      <p>The process of turning data into information involves <strong>collecting, organising, analysing</strong>, and <strong>presenting</strong> data.</p>
+
+      <h3>Attributes of Quality Information</h3>
+      <ul>
+        <li><strong>Accuracy</strong> – free from errors.</li>
+        <li><strong>Completeness</strong> – all necessary data is present.</li>
+        <li><strong>Currency</strong> – up-to-date and relevant.</li>
+        <li><strong>Relevance</strong> – appropriate for the purpose.</li>
+        <li><strong>Consistency</strong> – uniform format and meaning.</li>
+      </ul>
+    </div>
+
+    <!-- 2. Data Types -->
+    <div class="content-block">
+      <h2>2. Data Types</h2>
+      <p>In programming and databases, every piece of data has a <strong>type</strong> that defines how it is stored and used.</p>
+
+      <table style="width:100%;border-collapse:collapse;font-size:.93rem;">
+        <thead>
+          <tr style="background:#eff6ff;">
+            <th style="text-align:left;padding:.5rem .75rem;border:1px solid #e2e8f0;">Type</th>
+            <th style="text-align:left;padding:.5rem .75rem;border:1px solid #e2e8f0;">Description</th>
+            <th style="text-align:left;padding:.5rem .75rem;border:1px solid #e2e8f0;">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>Integer</code></td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;">Whole numbers (no decimal)</td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>42</code>, <code>-7</code></td>
+          </tr>
+          <tr style="background:#f8fafc;">
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>Float / Real</code></td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;">Numbers with a decimal point</td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>3.14</code>, <code>-0.5</code></td>
+          </tr>
+          <tr>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>String</code></td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;">Text characters</td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>"Hello"</code></td>
+          </tr>
+          <tr style="background:#f8fafc;">
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>Boolean</code></td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;">True or False</td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>True</code></td>
+          </tr>
+          <tr>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>Date / Time</code></td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;">Dates and times</td>
+            <td style="padding:.5rem .75rem;border:1px solid #e2e8f0;"><code>2025-11-05</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 3. Data Structures -->
+    <div class="content-block">
+      <h2>3. Data Structures</h2>
+
+      <h3>Arrays / Lists</h3>
+      <p>An ordered collection of values stored at numbered index positions (starting at 0).</p>
+      <pre><code>students = ["Alice", "Bob", "Charlie"]
+print(students[0])   # Alice
+print(students[2])   # Charlie</code></pre>
+
+      <h3>Dictionaries (Key-Value Pairs)</h3>
+      <p>Store data as paired keys and values, like a real dictionary.</p>
+      <pre><code>student = {"name": "Alice", "age": 17, "grade": "A"}
+print(student["name"])   # Alice</code></pre>
+
+      <h3>Two-Dimensional Arrays</h3>
+      <p>A grid/table of values – like rows and columns in a spreadsheet.</p>
+      <pre><code>grid = [[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]]
+print(grid[1][2])   # 6  (row 1, col 2)</code></pre>
+    </div>
+
+    <!-- 4. Databases -->
+    <div class="content-block">
+      <h2>4. Relational Databases</h2>
+      <p>A <strong>relational database</strong> stores data in tables (called <em>relations</em>). Tables are linked using <strong>keys</strong>.</p>
+
+      <h3>Key Concepts</h3>
+      <ul>
+        <li><strong>Table (Relation)</strong> – a grid of rows and columns.</li>
+        <li><strong>Row (Tuple / Record)</strong> – a single data entry.</li>
+        <li><strong>Column (Attribute / Field)</strong> – a property being stored.</li>
+        <li><strong>Primary Key (PK)</strong> – uniquely identifies each row in a table.</li>
+        <li><strong>Foreign Key (FK)</strong> – links a row in one table to a row in another table.</li>
+      </ul>
+
+      <h3>SQL Basics</h3>
+      <pre><code>-- Select all students
+SELECT * FROM Students;
+
+-- Select students with grade A
+SELECT Name, Age FROM Students WHERE Grade = 'A';
+
+-- Insert a new record
+INSERT INTO Students (Name, Age, Grade) VALUES ('Alice', 17, 'A');
+
+-- Update a record
+UPDATE Students SET Grade = 'B' WHERE Name = 'Bob';
+
+-- Delete a record
+DELETE FROM Students WHERE Name = 'Charlie';</code></pre>
+
+      <div class="callout">
+        💡 <strong>Remember:</strong> SQL keywords are conventionally written in UPPERCASE, but most databases are case-insensitive.
+      </div>
+    </div>
+
+    <!-- 5. Key Terms -->
+    <div class="content-block">
+      <h2>5. Key Terms Checklist</h2>
+      <ul>
+        <li>Data, information, knowledge</li>
+        <li>Integer, float, string, boolean</li>
+        <li>Array, list, dictionary, 2D array</li>
+        <li>Table, row, column, primary key, foreign key</li>
+        <li>SQL: SELECT, WHERE, INSERT, UPDATE, DELETE</li>
+        <li>Data quality: accuracy, completeness, currency</li>
+      </ul>
+      <div class="callout success">
+        ✅ <strong>Self-check:</strong> Write a SQL query to find all students older than 16. What data type would you use for "age"?
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>DigiSol &ndash; Digital Solutions General Senior Subject &bull; Queensland Curriculum &amp; Assessment Authority (QCAA)</p>
+  </footer>
+
+</body>
+</html>
